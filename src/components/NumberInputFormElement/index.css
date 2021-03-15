@@ -1,0 +1,4 @@
+root {
+    --color-error-background: rgba(255, 0, 0, .5);
+    --color-error-text: rgba(255, 0, 0)
+}

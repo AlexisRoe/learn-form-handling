@@ -1,0 +1,27 @@
+
+:root {
+        --color-invalid: rgb(255, 0, 0);
+        --color-valid: rgb(0,255,0);
+}
+
+.error-message {
+    display: none
+}
+
+.input:focus:not(:placeholder-shown):invalid {
+    border-color: var(--color-error);
+}
+
+.input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--color-error);
+}
+
+.input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  display: block;	
+}
+
+.input:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--color-valid);
+}
+
+
